@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <style name="Theme.Rider" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_rider</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Rider</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Rider</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Rider</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Rider</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Rider</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_rider</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_rider</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Rider</item>
+        
+                <!-- Light.DarkActionBar specific -->
+        <item name="android:actionBarWidgetTheme">@style/Theme.Rider.Widget</item>
+
+                <!-- Generated with http://android-holo-colors.com -->
+        <item name="android:editTextBackground">@drawable/rider_edit_text_holo_light</item>
+
+        <item name="android:textColorHighlight">#990099cc</item>
+        <item name="android:textSelectHandleLeft">@drawable/rider_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/rider_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/rider_text_select_handle_middle</item>
+
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewRider</item>
+
+        <item name="android:listChoiceIndicatorMultiple">@drawable/rider_btn_check_holo_light</item>
+
+        <item name="android:listChoiceIndicatorSingle">@drawable/rider_btn_radio_holo_light</item>
+
+        <item name="android:buttonStyle">@style/ButtonRider</item>
+
+        <item name="android:imageButtonStyle">@style/ImageButtonRider</item>
+
+        <item name="android:dropDownSpinnerStyle">@style/SpinnerRider</item>
+
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarRider</item>
+
+        <item name="android:seekBarStyle">@style/SeekBarRider</item>
+
+        <item name="android:ratingBarStyle">@style/RatingBarRider</item>
+
+        <item name="android:ratingBarStyleIndicator">@style/RatingBarBigRider</item>
+
+        <item name="android:ratingBarStyleSmall">@style/RatingBarSmallRider</item>
+
+        <item name="android:buttonStyleToggle">@style/ToggleRider</item>
+
+        <item name="android:listChoiceBackgroundIndicator">@drawable/rider_list_selector_holo_light</item>
+
+        <item name="android:activatedBackgroundIndicator">@drawable/rider_activated_background_holo_light</item>
+
+        <item name="android:fastScrollThumbDrawable">@drawable/rider_fastscroll_thumb_holo</item>
+
+    </style>
+
+    <style name="ActionBar.Solid.Rider" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid_rider</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_rider</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_rider</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Rider</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Rider" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_rider</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Rider</item>
+    </style>
+
+    <style name="PopupMenu.Rider" parent="@android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_rider</item>	
+    </style>
+
+    <style name="DropDownListView.Rider" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_rider</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Rider" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_rider</item>
+    </style>
+
+    <style name="DropDownNav.Rider" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_rider</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_rider</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_rider</item>
+    </style>
+    
+    <style name="ProgressBar.Rider" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_rider</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.Rider" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_rider</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Rider.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Rider</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Rider</item>
+    </style>
+
+
+    <!-- Generated with http://android-holo-colors.com -->
+    <style name="AutoCompleteTextViewRider" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/rider_list_selector_holo_light</item>
+        <item name="android:background">@drawable/rider_edit_text_holo_light</item>
+    </style>
+
+    <style name="ButtonRider" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/rider_btn_default_holo_light</item>
+    </style>
+
+    <style name="ImageButtonRider" parent="android:Widget.Holo.Light.ImageButton">
+        <item name="android:background">@drawable/rider_btn_default_holo_light</item>
+    </style>
+
+    <style name="SpinnerRider" parent="android:Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/rider_spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/rider_list_selector_holo_light</item>
+    </style>
+
+    <style name="TabRider">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:background">@drawable/rider_tab_indicator_holo</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">80dip</item>
+    </style>
+
+    <style name="TabTextRider">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <!-- v14 <item name="android:textAllCaps">true</item> -->
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:maxWidth">180dip</item>
+    </style>
+
+    <style name="ProgressBarRider" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/rider_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/rider_progress_indeterminate_horizontal_holo_light</item>
+    </style>
+
+    <style name="SeekBarRider" parent="android:Widget.Holo.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/rider_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/rider_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:thumb">@drawable/rider_scrubber_control_selector_holo_light</item>
+    </style>
+
+    <style name="RatingBarRider" parent="android:Widget.Holo.Light.RatingBar">
+        <item name="android:progressDrawable">@drawable/rider_ratingbar_full_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/rider_ratingbar_full_holo_light</item>
+    </style>
+
+    <style name="RatingBarBigRider" parent="android:Widget.Holo.Light.RatingBar.Indicator">
+        <item name="android:progressDrawable">@drawable/rider_ratingbar_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/rider_ratingbar_holo_light</item>
+    </style>
+
+    <style name="RatingBarSmallRider" parent="android:Widget.Holo.Light.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/rider_ratingbar_small_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/rider_ratingbar_small_holo_light</item>
+    </style>
+
+    <style name="ToggleRider" parent="android:Widget.Holo.Light.Button.Toggle">
+        <item name="android:background">@drawable/rider_btn_toggle_holo_light</item>
+    </style>
+
+</resources>
