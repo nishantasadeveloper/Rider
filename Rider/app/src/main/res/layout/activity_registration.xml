@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/ab_background_textured_rider"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:src="@drawable/ic_launcher">
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/registration_tv_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:text="Mobile No."/>
+
+            <EditText
+                android:id="@+id/registration_et_countrycode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/registration_tv_mobile"
+                android:maxLength="3"
+                android:minWidth="60dp"/>
+
+            <EditText
+                android:id="@+id/registration_et_mobilenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/registration_et_countrycode"/>
+
+            <TextView
+                android:id="@+id/registration_tv_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registration_et_countrycode"
+                android:layout_alignLeft="@id/registration_et_countrycode"
+                android:layout_alignRight="@id/registration_et_countrycode"
+                android:gravity="center"
+                android:text="Country Code"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/registration_tv_mobilenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registration_et_mobilenumber"
+                android:layout_alignLeft="@id/registration_et_mobilenumber"
+                android:layout_alignRight="@id/registration_et_mobilenumber"
+                android:gravity="center"
+                android:text="Mobile Number"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            style="@style/ButtonRider"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/submit"
+            android:textStyle="bold">
+        </Button>
+    </LinearLayout>
+
+</ScrollView>
